@@ -98,11 +98,17 @@ fnames <- list.files(in_dir, '_rawPtsLines_v3.gpkg')
 
 ### src/01_LUR
 `03_LUR_5fold_v1.r`: 5-fold CV using different subset of training and validation (city-specific, pooled, pooled deconv)
+
 `01_process_predictors.R`: Processes predictor data files from GEE for various cities.
+
 `03_LUR_5fold_v1.r`: Executes a 5-fold cross-validation strategy to evaluate LUR models, accommodating different subsets of training and validation data, including city-specific, pooled, and pooled deconvolution scenarios.
+
 `03_LUR_city.R`: Analyzes and models local urban regression (LUR) specifically tailored to individual city datasets.
+
 `03_LUR_global_LOAOCV_v1.R`: Implements a global Leave-One-Area-Out Cross-Validation (LOAOCV) strategy for LUR models to assess model robustness across different geographic areas.
+
 `04_LUR_global-model_performance.R`: Evaluates the performance of global LUR models, providing insights into their effectiveness and accuracy across multiple regions.
+
 
 ### src/02_vis
 
