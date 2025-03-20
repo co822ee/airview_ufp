@@ -1,0 +1,15 @@
+exc_var_slr <- function(variables_selected, variable_exclude, train_df, obs_name="UFPmean"){
+  selected_predictors2 <- variables_selected[!grepl(variable_exclude, variables_selected)]
+  slr_2 <- lm(as.formula(paste0(obs_name, " ~ ", paste0(c(selected_predictors2), collapse="+"))), train_df)
+  slr_2
+}
+output_slr_summary <- function(slr_2, csvname=paste0(csv_name, "_manual"), out_dir="data/workingData/"){
+  summarymodel <- names(slr_2)
+  coef_name <- summary(slr_2)$coefficients%>%rownames
+  coef_name[1] <- "Final"
+  summarymodel <- cbind(coef_name, summary(slr_2)$coefficients, vif = c("NA", vif(slr_2)))
+  colnames(summarymodel) <- c("variables", "beta", "Std.Error", "t", "P", "VIF")
+  write.csv(summarymodel, 
+            file= paste0(out_dir, "SLR_summary_model_", csvname, ".csv") ,
+            row.names=F)
+}
