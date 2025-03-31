@@ -116,7 +116,7 @@ fnames <- list.files(in_dir, '_rawPtsLines_v3.gpkg')
 
 ## License
 
-This project is licensed under the terms of the [GNU License](/LICENSE.md)
+This project is licensed under the terms of the [GNU License](/LICENSE)
 
 ## Citation
 
