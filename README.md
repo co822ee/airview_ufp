@@ -120,4 +120,6 @@ This project is licensed under the terms of the [GNU License](/LICENSE)
 
 ## Citation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15113881.svg)](https://zenodo.org/records/15113881)
+
 Please [cite this project as described here](/CITATION.md).
