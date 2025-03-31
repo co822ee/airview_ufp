@@ -2,7 +2,7 @@
 
 Version 0.1.0
 
-Building models for UFP and/or BC in EXPANSE. 
+Building models for UFP in EXPANSE. 
 
 
 ## Project organization
